@@ -31,7 +31,10 @@
             <h2>Available Jobs</h2>
             
             {% if user.is_superuser or user.role == 'admin' %}
-                <a href="{% url 'post_job' %}" class="btn btn-outline-primary">Post a New Job</a>
+                <div>
+                    <a href="{% url 'employer_dashboard' %}" class="btn btn-warning me-2">View Applicants (Dashboard)</a>
+                    <a href="{% url 'post_job' %}" class="btn btn-outline-primary">Post a New Job</a>
+                </div>
             {% endif %}
         </div>
         
