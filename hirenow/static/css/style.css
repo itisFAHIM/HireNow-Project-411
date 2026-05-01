@@ -1,0 +1,25 @@
+body {
+    background-color: #f8f9fa;
+    background-image: radial-gradient(circle at 10% 20%, rgb(240, 245, 255) 0%, rgb(245, 245, 245) 90%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.job-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: none;
+    border-radius: 12px;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08) !important;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+    color: white;
+    padding: 3rem 0;
+    border-radius: 16px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(13, 110, 253, 0.2);
+}
