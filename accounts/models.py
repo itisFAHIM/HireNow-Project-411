@@ -7,4 +7,6 @@ class User(AbstractUser):
         ('user', 'User'),
     )
     role = models.CharField(max_length=10, choices=ROLE_CHOICES, default='user')
+
+    profile_pic = models.ImageField(upload_to='profiles/', blank=True, null=True)
     
